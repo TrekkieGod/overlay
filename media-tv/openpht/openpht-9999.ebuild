@@ -4,17 +4,34 @@
 
 EAPI=6
 
+inherit git-r3 cmake-utils eutils
+
 DESCRIPTION="OpenPHT is a community driven fork of Plex Home Theater"
 HOMEPAGE="https://github.com/RasPlex/OpenPHT"
-SRC_URI="https://github.com/RasPlex/OpenPHT.git"
+EGIT_REPO_URI="https://github.com/RasPlex/OpenPHT.git"
 
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-DEPEND=""
+DEPEND="dev-libs/yajl"
 RDEPEND="${DEPEND}"
 
-src_install(){
+src_prepare() {
+	epatch "${FILESDIR}/FindFriBiDi.cmake.patch"
+	eapply_user
 }
+
+src_configure() {
+	local mycmakeargs=(
+		-DCMAKE_BUILD_TYPE=Debug
+		-DCOMPRESS_TEXTURES=on
+		-DENABLE_AUTOUPDATE=off
+		-DCMAKE_INSTALL_PREFIX=/opt/openpht
+	)
+	cmake-utils_src_configure
+}
+
+#src_install(){
+#}
