@@ -15,7 +15,10 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-DEPEND="dev-libs/yajl"
+DEPEND="dev-libs/yajl
+	net-libs/libmicrohttpd
+	dev-libs/tinyxml
+	media-libs/libmodplug"
 RDEPEND="${DEPEND}"
 
 src_prepare() {
