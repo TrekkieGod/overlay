@@ -16,8 +16,13 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 DEPEND="dev-libs/yajl
+	app-pda/libplist
 	net-libs/libmicrohttpd
+	net-libs/shairplay
+	dev-libs/libcec
 	dev-libs/tinyxml
+	media-libs/sdl-image
+	media-video/rtmpdump
 	media-libs/libmodplug"
 RDEPEND="${DEPEND}"
 
