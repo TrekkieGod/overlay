@@ -13,6 +13,5 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86 ~arm ~arm64"
 IUSE=""
 
-DEPEND=""
-RDEPEND="${DEPEND}"
-BDEPEND=""
+RDEPEND="media-libs/libsdl2 dev-libs/boost media-libs/freeimage media-libs/freetype dev-cpp/eigen net-misc/curl"
+DEPEND="${RDEPEND} dev-util/cmake"
