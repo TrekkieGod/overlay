@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<repositories version="1.0">
+	<repo priority="50" quality="experimental" status="unofficial">
+		<name>TrekkieGod</name>
+		<Description>TrekkieGod's experimental overlay</Description>
+		<homepage>https://github.com/TrekkieGod/overlay</homepage>
+		<owner>
+			<email>donotemail@mailinator.com</email>
+		</owner>
+		<source type="git">https://github.com/TrekkieGod/overlay.git</source>
+	</repo>
+</repositories>

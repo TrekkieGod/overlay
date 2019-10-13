@@ -7,11 +7,11 @@ inherit cmake-utils
 inherit git-r3
 
 EGIT_REPO_URI="https://github.com/RetroPie/EmulationStation.git"
-EGIT_BRANCH="master"
+EGIT_COMMIT="v2.7.6"
 
 LICENSE="BSD-with-attribution"
 SLOT="0"
-KEYWORDS="~amd64 ~x86 ~arm ~arm64"
+KEYWORDS="amd64 x86 arm arm64"
 IUSE=""
 
 RDEPEND="media-libs/libsdl2 dev-libs/boost dev-libs/rapidjson media-libs/freeimage media-libs/freetype dev-cpp/eigen net-misc/curl"
