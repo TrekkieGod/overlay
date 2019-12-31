@@ -23,7 +23,10 @@ DEPEND="dev-libs/yajl
 	dev-libs/tinyxml
 	media-libs/sdl-image
 	media-video/rtmpdump
-	media-libs/libmodplug"
+	media-libs/libmodplug
+	media-libs/glew
+	media-libs/libass
+	x11-libs/libva"
 RDEPEND="${DEPEND}"
 
 src_prepare() {
